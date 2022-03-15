@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:weightSum="6" >
+    <LinearLayout 
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        ></LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+                    android:gravity="center"
+        
+        >
+        <TextView
+            android:id="@+id/qCameraTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/violet"
+            android:padding="15dip"
+            android:text="test"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size" >
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+                    android:gravity="center"
+        
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/bt_take_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@drawable/camera"
+            android:text="Start"
+            android:visibility="visible" >
+        </Button>
+        
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="10dp"
+             >
+
+            <Button
+                android:id="@+id/bt_show_picture"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:minWidth="90dip"
+                android:text="Show"
+                android:textColor="#ffffff"
+                android:visibility="invisible"
+                android:textSize="@dimen/text_size"
+                android:background="@color/violet"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/bt_delete_picture"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="57dp"
+                android:gravity="center"
+                                android:textColor="#ffffff"
+                
+                android:minWidth="90dip"
+                android:text="@string/delete"
+                android:textSize="@dimen/text_size"
+                android:visibility="invisible"
+                android:background="@color/violet"
+                >
+            </Button>
+        </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/bt_pic_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:src="@drawable/back_button" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="@string/back"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/bt_pic_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:src="@drawable/next_button" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size" 
+                     android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+    
+</LinearLayout>

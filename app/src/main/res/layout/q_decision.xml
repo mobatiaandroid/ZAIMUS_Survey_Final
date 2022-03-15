@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/qDecisionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/violet"
+        android:padding="15dip"
+        android:text="@string/decision_text"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size" >
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/qDecisionRG"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/qDecisionRBYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:button="@drawable/radio_button_background"
+            android:enabled="true"
+            android:paddingLeft="50dip"
+            android:text="@string/yes"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/qDecisionRBNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:button="@drawable/radio_button_background"
+            android:paddingLeft="50dip"
+            android:text="@string/no"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size" >
+        </RadioButton>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:gravity="bottom" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/qDecisionBack"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:src="@drawable/back_button" />
+
+            <TextView
+                android:id="@+id/txtqDecisionBack"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".4"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/qDecisionNext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:src="@drawable/next_button" />
+
+            <TextView
+                android:id="@+id/txtqDecisionNext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".4"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

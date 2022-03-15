@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887134831815",
+    "project_id": "survey-eaac7",
+    "storage_bucket": "survey-eaac7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887134831815:android:c28f6b8c5ec45a5ea56ae2",
+        "android_client_info": {
+          "package_name": "com.zaimus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887134831815-ovc8kp7k7c9ccp96s7us7j57lqjqp45h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5O1y0EWvEkz6415ETuG2-smEY8oLHEII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887134831815-ovc8kp7k7c9ccp96s7us7j57lqjqp45h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

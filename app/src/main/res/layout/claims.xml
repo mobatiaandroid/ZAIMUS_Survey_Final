@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        android:weightSum="13" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Select Tour Plan"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/edtSelectSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"    
+            android:prompt="@string/selectsurvey"        
+            android:textSize="@dimen/text_size" 
+            android:textColor="#000000"/>
+        
+         <TextView
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Select District"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/edtPlanDist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"    
+            android:textSize="@dimen/text_size" 
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/balanceamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:text="Balance Amount :"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Type"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <!-- <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textSize="@dimen/text_size" 
+            android:textColor="#000000"/> -->
+            <Spinner
+            android:id="@+id/edtType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"    
+            android:prompt="@string/selectsurvey"        
+            android:textSize="@dimen/text_size" 
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textSize="@dimen/text_size"
+             android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Amount"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="@dimen/text_size"
+             android:textColor="#000000" />
+        <Button 
+            android:id="@+id/captureImage"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+                        android:text="Select Photo"
+                        android:background="@color/violet"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ffffff"
+           />
+        <ImageView 
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <Button 
+            android:id="@+id/submitCliams"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/violet"
+            android:text="Submit"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="#ffffff"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

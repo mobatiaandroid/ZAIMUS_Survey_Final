@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zaimus">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature android:name="android.hardware.camera2"></uses-feature>
+
+    <application
+        android:name="com.zaimus.MyApplication"
+        android:fullBackupContent="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/icon"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.zaimus.SettingsActivity"
+            android:configChanges="keyboardHidden|orientation"
+
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.zaimus.SearchUserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name="com.zaimus.AddUserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.zaimus.SurveySetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.zaimus.ViewUserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.zaimus.EditUserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <!-- <activity
+            android:name="com.vkcrestore.SurveyActivity"
+            android:label="@string/app_name" >
+        </activity> -->
+        <activity
+            android:name="com.zaimus.SurveyTypes.SingleSelectionRadio"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.SingleSelectionList"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.TabularQuestions"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.Matrix"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.Order"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.MultiSelectionCheck"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.Slider"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.Star"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.TextInput"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.ImageFeedback"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.IntInput"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.SurveyUpdateActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.ImageCapture"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.ShowPicture"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.Decision"
+            android:screenOrientation="landscape"></activity>
+
+        <activity
+            android:name="com.zaimus.SurveyTypes.AutoComplete"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.VKCAppActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.VKCLoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.SurveyListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.VKCSplash"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zaimus.TourPlanDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <!--  <activity
+             android:name="com.vkcrestore.ContactUsActivity"
+             android:windowSoftInputMode="adjustPan" >
+         </activity> -->
+        <activity
+            android:name="com.zaimus.AddClaimsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.AttendanceActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.ClaimListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.ShowCustomers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.SurveyTypes.ImageSelection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.TourPlanListingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.zaimus.AddUserToPlan"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <!-- <activity
+            android:name="com.vkcrestore.SurveyTypes.TabularQuestionNew"
+            android:windowSoftInputMode="adjustPan" >
+        </activity> -->
+        <activity
+            android:name="com.zaimus.RestoreList"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/blackText"></activity>
+        <service
+            android:name="com.zaimus.gps.GpsLocationService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/gps_service"></service>
+        <!-- <service
+             android:name=".manager.TimerService"
+             android:enabled="true"
+             android:exported="false"
+             android:permission="android.permission.BIND_JOB_SERVICE"/>-->
+        <!--<service
+            android:name=".manager.RemoteService"
+            android:enabled="true"
+            android:exported="false"></service>-->
+        <!-- <service
+            android:name="com.vkcrestore.SyncCustomerService"
+            android:enabled="true"
+            android:label="@string/gps_service" >
+        </service> -->
+
+        <receiver
+            android:name="com.zaimus.gps.RepeatGpsReciever"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.vkcrestore.gps.RepeatGpsReciever" />
+            </intent-filter>
+        </receiver>
+
+
+        <!--<receiver
+            android:name="com.vkcrestore.manager.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>-->
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtCustID"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Customer ID"
+        android:inputType="textCapCharacters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtCustMobile"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:hint="Mobile No."
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustID" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtCustWhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:hint="WhatsApp No."
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustMobile" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtCustShopName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:hint="Shop Name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustWhatsApp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtCustState"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:hint="State"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustShopName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtCustDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:hint="District"
+        android:visibility="gone"
+
+        app:layout_constraintTop_toBottomOf="@+id/edtCustState" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtCustPlace"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:hint="Place"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustDistrict" />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/violet"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustPlace" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@color/violet"
+        android:text="Search"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustPlace" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

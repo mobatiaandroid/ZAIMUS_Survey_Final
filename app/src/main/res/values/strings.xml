@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+
+    <!-- <string name="app_name">VKC Restore</string> -->
+    <string name="app_name">Survey</string>
+    <string name="versionofvkc">Version_1.0</string>
+
+    <string name="custname">Customer Name</string>
+    <string name="shopname">Shop Name</string>
+    <string name="addr1">Door No</string>
+    <string name="addr2">Building</string>
+    <string name="addr3">Road</string>
+    <string name="country">Country</string>
+    <string name="department">Survey Type</string>
+    <string name="addr4">Post</string>
+    <string name="addr5">PIN</string>
+    <string name="phone">Mobile Number</string>
+    <string name="place">Place</string>
+    <string name="catecory">Category</string>
+    <string name="btype">Business type</string>
+    <string name="relevance">Shop Relevance</string>
+    <string name="district">District</string>
+    <string name="startsurvey">Start Survey</string>
+    <string name="edituser">Edit Customer</string>
+    <string name="emailid">Email Id</string>
+    <string name="phone2">WhatsApp Number</string>
+    <string name="synch">EXPORT SURVEY </string>
+    <string name="synch_customer">SYNC CUSTOMERS</string>
+    <string name="export_customer">EXPORT CUSTOMERS</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="conn_err">Connection Timeout Error</string>
+    <string name="survey">TAKE SURVEY</string>
+    <string name="back">BACK</string>
+    <string name="settings">SETTINGS</string>
+    <string name="add_user">ADD<br />CUSTOMER</string>
+    <string name="login_acnt">Login to your account</string>
+    <string name="next">NEXT</string>
+    <string name="scrolltext">Please Scroll</string>
+    <string name="surveysubmit">Submit Survey</string>
+    <string name="close">Close</string>
+    <string name="delete">Delete</string>
+    <string name="decision_text">Would you like to take our survey?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="state">State</string>
+    <string name="custdesg">Designation</string>
+    <string name="gps_service">GPS Service</string>
+    <string name="restore">RESTORE</string>
+    <string name="backup">BACKUP</string>
+    <string name="import_text">IMPORT</string>
+    <string name="selectsurvey">Select Survey</string>
+    <string name="loading">Connecting Server..</string>
+
+    <style name="blackText">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+</resources>

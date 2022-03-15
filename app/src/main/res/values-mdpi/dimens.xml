@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- alert dialog -->
+    <dimen name="width">40dp</dimen>
+    <dimen name="height">40dp</dimen>
+    <dimen name="l_width">20dp</dimen>
+    <dimen name="l_height">20dp</dimen>
+    <dimen name="text_header">20sp</dimen>
+    <dimen name="text_size">7pt</dimen>
+    <dimen name="editfield_height">30dp</dimen>
+                                  <dimen name="b_height">50dp</dimen>
+                      
+</resources>

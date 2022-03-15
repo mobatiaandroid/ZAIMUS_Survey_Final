@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:weightSum="3" >
+    <LinearLayout 
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:orientation="horizontal"></LinearLayout>
+
+    <Button
+        android:id="@+id/bt_pic_close"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:layout_gravity="right"
+        android:text="@string/close"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:background="@color/violet" >
+    </Button>
+
+    <ImageView
+        android:id="@+id/cameraImgview"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginBottom="20dip" >
+    </ImageView>
+    <TextView 
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size"/>
+
+</LinearLayout>

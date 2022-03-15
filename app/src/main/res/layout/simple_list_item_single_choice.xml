@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:checkMark="@drawable/radio_button_background"
+    android:gravity="center_vertical"
+    android:paddingBottom="1dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="5dip"
+    android:paddingTop="1dip"
+    android:textColor="#000000"
+    android:textSize="@dimen/text_size" />

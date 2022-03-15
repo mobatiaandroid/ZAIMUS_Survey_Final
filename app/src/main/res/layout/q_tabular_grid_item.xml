@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/optionTabular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="HIII"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1.5"
+            android:visibility="visible" />
+        <!--  <Button
+         android:id="@+id/btn_close_popup"
+         android:layout_width="0dp"
+         android:layout_weight=".4"
+         android:layout_height="wrap_content"
+         android:background="@android:drawable/ic_delete"
+          /> -->
+    </LinearLayout>
+    <!--
+          <EditText
+            android:id="@+id/optionText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:textColor="#000000"
+            android:background="@drawable/edittext_border"
+             />
+    -->
+
+</LinearLayout>

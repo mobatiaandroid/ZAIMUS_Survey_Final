@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vkc_pantone">#7F2F9D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="violet">#6e2ac2</color>
+    <color name="red">#d00000</color>
+    <color name="green">#00EF65</color>
+    <color name="survey_name">#FF0076</color>
+</resources>
