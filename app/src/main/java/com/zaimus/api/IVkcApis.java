@@ -16,12 +16,21 @@ public interface IVkcApis {
 
   
     ///  Dev
-    String DOMAIN_VKC = "http://dev.mobatia.com/zaimus_survey/api/";
-    String
-            IMAGE_FEEDBACK_URL = "http://dev.mobatia.com/zaimus_survey";
-    String
-            DOMAIN_IMAGE_UPLOAD = "http://dev.mobatia.com/zaimus_survey/api/upload";
+//    String DOMAIN_VKC = "http://dev.mobatia.com/zaimus_survey/api/";
+//    String
+//            IMAGE_FEEDBACK_URL = "http://dev.mobatia.com/zaimus_survey";
+//    String
+//            DOMAIN_IMAGE_UPLOAD = "http://dev.mobatia.com/zaimus_survey/api/upload";
+
+
 // Live
+
+    String DOMAIN_VKC = "https://survey.zaimus.com/api/";
+    String
+            IMAGE_FEEDBACK_URL = "https://survey.zaimus.com/";
+    String
+            DOMAIN_IMAGE_UPLOAD = "https://survey.zaimus.com/api/upload";
+
 
 
  /*String DOMAIN_VKC = "http://ec2-23-22-108-196.compute-1.amazonaws.com/zaimus_survey/api/";

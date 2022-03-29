@@ -7,6 +7,7 @@
         <domain includeSubdomains="true">192.168.0.231</domain>
         <domain includeSubdomains="true">192.168.0.153</domain>
         <domain includeSubdomains="true">192.168.0.177</domain>
+        <domain includeSubdomains="true">survey.zaimus.com</domain>
         <domain includeSubdomains="true">ec2-23-22-108-196.compute-1.amazonaws.com</domain>
 
     </domain-config>
